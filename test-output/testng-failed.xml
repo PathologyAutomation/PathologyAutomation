@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [pathology]" parallel="tests">
+  <parameter name="browser" value="iexplore"/>
+  <test name="EndToEndForChrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="SetUp"/>
+          <include name="SetUp"/>
+          <include name="VerifyLoginForAdmin"/>
+          <include name="QuitDriver"/>
+          <include name="QuitDriver"/>
+          <include name="QuitDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="VerifyInvalidLoginScenario"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- EndToEndForChrome(failed) -->
+  <test name="EndToEndForIE(failed)" parallel="tests">
+    <parameter name="browser" value="iexplore"/>
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="SetUp"/>
+          <include name="SetUp"/>
+          <include name="QuitDriver"/>
+          <include name="QuitDriver"/>
+          <include name="QuitDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="VerifyInvalidLoginScenario"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- EndToEndForIE(failed) -->
+</suite> <!-- Failed suite [pathology] -->

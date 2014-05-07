@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="pathology" verbose="1" parallel="tests" thread-count="1">
+	
+	<test name="EndToEndForFirefox">
+	<parameter name="browser" value="firefox" />
+		<classes>
+			 <class name="test.LoginTest" />
+			<!-- <class name="test.FacilityCreationTest">-->
+			<!-- <class name="test.OrderFormTest">-->
+			
+			
+		</classes>
+	</test>
+	
+	<test name="EndToEndForChrome">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			 <class name="test.LoginTest" />
+			<!-- <class name="test.FacilityCreationTest">-->
+			<!-- <class name="test.OrderFormTest">-->
+			
+			
+		</classes>
+	</test>
+	
+	<test name="EndToEndForIE">
+	<parameter name="browser" value="iexplore" />
+		<classes>
+			 <class name="test.LoginTest" />
+			<!-- <class name="test.FacilityCreationTest">-->
+			<!-- <class name="test.OrderFormTest">-->
+			
+			
+		</classes>
+	</test>
+</suite>

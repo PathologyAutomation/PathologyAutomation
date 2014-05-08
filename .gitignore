@@ -3,6 +3,7 @@
 *.war
 *.ear
 *.class
+*.html
 
 # eclipse specific git ignore
 *.pydevproject
@@ -11,7 +12,7 @@
 bin/**
 tmp/**
 tmp/**/*
-test-output/
+test-output/**
 
 *.tmp
 *.bak
